@@ -1,6 +1,7 @@
 plugins {
-    id 'fabric-loom' version '0.9-SNAPSHOT'
+    id 'fabric-loom' version '0.10-SNAPSHOT'
     id 'maven-publish'
+    id 'java'
 }
 
 sourceCompatibility = JavaVersion.VERSION_16
@@ -31,7 +32,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Mod Menu
-    modImplementation("com.terraformersmc:modmenu:$mod_menu_version")
+    //modImplementation("com.terraformersmc:modmenu:$mod_menu_version")
 }
 
 processResources {
